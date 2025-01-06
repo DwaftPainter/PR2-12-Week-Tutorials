@@ -1,29 +1,47 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# Java
+*.class
+*.log
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse
 .project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.classpath
+.settings/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# OS-specific files
 .DS_Store
+Thumbs.db
+
+# IntelliJ IDEA specific files
+.idea/.idea_modules/
+.idea/*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/.name
+.idea/libraries
+.idea/assetCatalogs/
+
+# JetBrains Rider (if applicable)
+.idea/.idea/
+.idea/*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/libraries/
+
+# Other common IDE and OS files
+*.swp
+*.swo
