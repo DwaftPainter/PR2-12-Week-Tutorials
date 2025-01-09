@@ -1,24 +1,25 @@
-package Week01.TutorialWeek01;
+package Week01.TutorialWeek01Official;
 
 import java.util.Scanner;
 
-public class DisplayPyramid {
+public class NumbersPyramid {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number of lines: ");
         int rows = scanner.nextInt();
 
-        displayPyramid(rows);
+        printNumbersPyramid(rows);
     }
 
-    static void displayPyramid(int rows) {
-        if (rows < 1 || rows > 15) {
-            System.out.print("Invalid number of lines: Should be an integer from 1 to 15.");
+    static void printNumbersPyramid(int rows) {
+        if (rows < 3 || rows > 10) {
+            System.out.print("Invalid number of rows: Should be an integer from 3 to 10.");
             return;
         }
 
-        for (int i = 1; i < rows + 1; i++) {
+        int center = 1;
+        for (int i = 1; i <= rows; i++) {
             for (int s = 0; s < rows - i; s++) {
                 System.out.print("  ");
             }
@@ -30,7 +31,7 @@ public class DisplayPyramid {
             }
 
             //Print left side --> center
-            for (int l = i; l > 1; l--) {
+            for (int l = 1; l < center; l = l * 2) {
                 if (l < 10) {
                     System.out.print("   ");
                 } else if (l < 100) {
@@ -41,8 +42,8 @@ public class DisplayPyramid {
                 System.out.print(l);
             }
 
-            //Print Center --> right side
-            for (int r = 1; r <= i; r++) {
+            //Print center --> right side
+            for (int r = center; r >= 1; r = r / 2) {
                 if (r < 10) {
                     System.out.print("   ");
                 } else if (r < 100) {
@@ -52,6 +53,9 @@ public class DisplayPyramid {
                 }
                 System.out.print(r);
             }
+
+            //Update center value
+            center *= 2;
 
             System.out.println();
         }

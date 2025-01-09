@@ -1,4 +1,4 @@
-package Week01.TutorialWeek01;
+package Week01.TutorialWeek01Official;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class DisplayPyramid {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the number of lines: ");
+        System.out.println("Enter the number of lines: ");
         int rows = scanner.nextInt();
 
         displayPyramid(rows);
