@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Activity05 {
     public static void main(String[] args) {
-        try (DataInputStream input = new DataInputStream(new FileInputStream("src\\input.txt"))) {
+        try (DataInputStream input = new DataInputStream(new FileInputStream("input.txt"))) {
            String[] NM = input.readLine().split(" ");
             int N = Integer.parseInt(NM[0]);
             int M = Integer.parseInt(NM[1]);
