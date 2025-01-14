@@ -45,3 +45,5 @@ Thumbs.db
 # Other common IDE and OS files
 *.swp
 *.swo
+
+/out/
