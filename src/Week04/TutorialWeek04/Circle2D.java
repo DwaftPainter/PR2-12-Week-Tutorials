@@ -35,7 +35,7 @@ public class Circle2D {
     }
 
     public boolean contains(Circle2D circle) {
-        return circle.point.distance(this.point) + this.radius < circle.radius;
+        return this.point.distance(circle.point) + circle.radius < this.radius;
     }
 
     public boolean overlaps(Circle2D circle) {
