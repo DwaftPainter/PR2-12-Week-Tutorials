@@ -42,6 +42,15 @@ class Point2D {
         return this.y;
     }
 
+    //Setter Method
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
     public double setDistanceTo(Point2D p) {
         double x = p.getX();
         double y = p.getY();
