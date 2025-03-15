@@ -19,7 +19,7 @@ public class IntegerSum {
             if (i.equals("0")) {
                 break;
             }
-            System.out.println(i);
+
             sum += Integer.parseInt(i.trim());
         }
 
